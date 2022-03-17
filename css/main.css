@@ -1,0 +1,45 @@
+.accardion {
+    width: 768px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accardion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    width: 100%;
+    border: none;
+    background: #1f8dd6;
+    font-size: 1.1rem;
+    color: white;
+    border-bottom: 1px solid #54a0ff;
+    outline: none;
+    cursor: pointer;
+} 
+
+.accardion-header.active {
+    background-color: #1070b1;
+}
+
+.accardion-header.active i {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.accardion-body {
+    padding: 0 1rem;
+    background: #f3f3f3;
+    font-size: 1.2222rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.accardion-body.active {
+    max-height: 10rem;
+    padding: 1rem;
+}
